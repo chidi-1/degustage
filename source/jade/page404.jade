@@ -1,0 +1,45 @@
+block vars
+    - var title='Title'
+
+extends partials/layout-lk
+
+block content
+
+    .page.page-error
+        section.page-title
+            .width-wrap
+                div
+                    h1 Ошибка
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-error__content
+            .width-wrap
+
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        span 404
+
+                h3 К сожалению, запрашиваемая страница не найдена
+
+                span.error-number 404
+
+                img(src="s/img/img--404.jpg" alt /)
+
+                p Расстроились? Ничего страшного!
+                    br
+                    = "Попробуйте изучить другие страницы или"
+                    a(href="") подобрать
+                    br
+                    = "индивидуальный винный набор."
+                    br
+                    = "У вас все получится."
+
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/entrance-page.jpg",opacity: 0.5,top: -144,left: 272,center: false,clip: true,show: false});});
+
+
+

@@ -1,0 +1,272 @@
+.cbp-spmenu
+  position fixed
+  background #000000
+
+  .nav-block
+    padding 25px 0 27px
+    border-bottom 1px solid #333333
+
+  .nav-menu
+    li
+      display block
+      margin-bottom 10px
+
+      a
+        color #ffffff
+        font-size 16px
+        text-transform uppercase
+
+  .nav--links
+    a
+      display block
+      margin-bottom 1px
+      font-size 12px
+      color #999999
+      text-transform uppercase
+
+  .nav--icons
+    padding-top 45px
+
+    a
+      display block
+      font-size 12px
+      color #ffffff
+      height 26px
+      line-height 26px
+      margin-bottom 10px
+
+      img
+        display inline-block
+        vertical-align top
+        width 26px
+        height 26px
+        margin-right 10px
+
+    .main-form
+      display block
+      position relative
+      margin-top 20px
+      width 220px
+
+      .inp
+        display block
+        border 1px solid #ffffff
+        width 220px
+        height 25px
+        background transparent
+        outline none
+        color #ffffff
+        font-size 12px
+        line-height 12px
+
+      .inp-submit
+        position absolute
+        z-index 5
+        cursor pointer
+        width 25px
+        height 24px
+        border-left 1px solid #ffffff
+        top 0
+        right 3px
+        background url("../img/icon--search-d.png") no-repeat  72% 49%
+        margin-bottom 0
+
+  .nav-footer
+    padding-top 10px
+
+    a
+      display block
+      color #ffffff
+      font-size 10px
+      font-family $fGothamPro_l
+
+    a.phone
+      font-size 12px
+
+  .nav--social
+    display inline-block
+    vertical-align top
+    margin-top 65px
+    padding 12px 0 10px 15px
+
+    li
+      display inline-block
+      vertical-align top
+      margin-right 15px
+
+      a
+        display block
+
+        img
+          display block
+          width 48px
+          height 48px
+
+  .restaurant-menu
+    padding-bottom 20px
+
+    li
+      display block
+      margin-bottom 3px
+      width 190px
+
+      span, a
+        display block
+        text-transform uppercase
+        font-size 12px
+        color #999999
+
+      span
+        color #ffffff
+
+
+.wrapper-close
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z-index 900
+  pointer-events none
+  background rgba(0,0,0,0.4)
+  opacity 0
+  transition all 0.3s ease
+
+  .wrapper-close-icon
+    position absolute
+    top 37px
+    z-index 901
+    cursor pointer
+    padding-top 5px
+    padding-right 5px
+
+    i
+      display block
+      width 32px
+      height 32px
+      border-radius 32px
+      background #000000 url("../img/icon--close.png") no-repeat 50% 50%
+
+  .wrapper-close-icon.icon-right
+    right 14px
+
+  .wrapper-close-icon.icon-left
+    left 14px
+
+.cbp-spmenu-vertical
+  width 230px
+  padding 25px 35px 0
+  top 0
+  z-index 1000
+
+.cbp-spmenu-left
+  left -300px
+  background $cGlack
+
+.cbp-spmenu-right
+  right -300px
+  background $cGlack
+
+.cbp-spmenu-left.cbp-spmenu-open
+  left -300px
+  position absolute
+
+.cbp-spmenu-right.cbp-spmenu-open
+  right -300px
+  position absolute
+  
+.cbp-spmenu-push 
+  //overflow-x hidden
+  position relative
+  left 0
+  min-width 920px
+
+.cbp-spmenu-push-toright 
+  left 300px
+
+  .wrapper-close
+    opacity 1
+    pointer-events auto
+    cursor url("../img/icon-close.cur"), suto
+
+  .header
+    z-index 800
+
+.cbp-spmenu-push-toleft 
+  left -300px
+
+  .wrapper-close
+    opacity 1
+    pointer-events auto
+    cursor url("../img/icon-close.cur"), suto
+
+  .header
+    z-index 800
+
+.cbp-spmenu-top
+  top -150px
+  left 0
+  right 0
+  height 70px
+  background #ffffff
+  z-index 950
+  position absolute
+
+  .search-form
+    display block
+    width 920px
+    position relative
+    height 28px
+    margin-top 18px
+
+    .inp
+      display block
+      width 920px
+      padding-left 20px
+      padding-right 20px
+      height 28px
+      border 1px solid $cBlack
+      text-align center
+      font-size 12px
+
+    .inp:focus::placeholder
+      opacity 0
+
+    .icon-search
+      position absolute
+      z-index 5
+      top 1px
+      right 20px
+
+    .icon-search:after
+      color #909090
+      font-size 14px
+
+.cbp-spmenu-top.cbp-spmenu-open
+  top 119px
+
+.cbp-spmenu-push-totop
+
+  .wrapper-close
+    opacity 1
+    pointer-events auto
+    cursor url("../img/icon-close.cur"), suto
+
+    .wrapper-close-icon
+      display none
+
+  .header
+    z-index 1000
+    border-bottom 1px solid $cBlack
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push 
+  -webkit-transition all 0.3s ease
+  -moz-transition all 0.3s ease
+  transition all 0.3s ease
+  background #000000
+
+
+  

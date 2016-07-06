@@ -1,0 +1,191 @@
+block vars
+    - var title='Title'
+
+extends partials/layout-lk
+
+block content
+
+    .page.lk
+        section.page-title
+            .width-wrap
+                div
+                    h1 Мой кабинет
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span personal
+
+                form(action="s/js/ajax/send-ok.php" method="post").lk-data
+                    .lk-data--img.fwa-icon.icon-camera
+                        img(src="s/img/img--lk.jpg" alt /)
+
+                    .lk-data--content.disabled
+                        ul
+                            li
+                                span.field-name Имя пользователя:
+                                input(type="text" name="name" disabled placeholder="").inp.inp-text
+
+                            li
+                                span.field-name Электронная почта:
+                                input(type="text" name="mail" disabled placeholder="").inp.inp-text.inp-mail
+
+                            li
+                                span.field-name Пароль:
+                                input(type="password" name="password" disabled placeholder="").inp.inp-text
+
+                            li
+                                span.field-name Адрес:
+                                input(type="text" name="adress" disabled placeholder="").inp.inp-text
+
+                            li
+                                span.field-name Способ оплаты:
+                                label.radio
+                                    input(type="radio" checked name="paymethod" valie="cash")
+                                    span Наличные
+
+                                label.radio
+                                    input(type="radio" name="paymethod" valie="card")
+                                    span Картами
+                                    img(src="s/img/icon--visa.jpg" alt /)
+                                    img(src="s/img/icon--mc.jpg" alt /)
+
+                    .btn-wrap
+                        a(href="").btn.change-lk-data.js--change-lk-data  Изменить данные
+
+                .lk-history.tabs
+                    .justifyed
+                        .lk-history__orders
+                            span.title Мои заказы
+
+                            ul.tabs__caption
+                                li.active 12/14/4978
+                                li 13/11/2015
+                                li 26/14/2015
+
+                        .lk-history__info
+                            .tabs__content.active
+                                table(cellspacing="0")
+                                    tr
+                                        th.amount Колличество
+                                        th.name Наименование
+                                        th.price Цена
+
+                                    tr
+                                        td.amount
+                                            span 5
+
+                                        td.name
+                                            span Винный Николай
+
+                                        td.price
+                                            span.roubl 6500
+
+                                    tr
+                                        td.amount
+                                            span 3
+
+                                        td.name
+                                            span Винный Николай для двоих под свечи ночи и пение сверчков
+
+                                        td.price
+                                            span.roubl 4100
+
+                                    tr
+                                        td.amount
+                                            span 5
+
+                                        td.name
+                                            span Оранжевый Грейпфрут  и Лодочки
+
+                                        td.price
+                                            span.roubl 6500
+
+                            .tabs__content
+                                table(cellspacing="0")
+                                    tr
+                                        th.amount Колличество
+                                        th.name Наименование
+                                        th.price Цена
+
+                                    tr
+                                        td.amount
+                                            span 4
+
+                                        td.name
+                                            span Винный Николай
+
+                                        td.price
+                                            span.roubl 5500
+
+                                    tr
+                                        td.amount
+                                            span 6
+
+                                        td.name
+                                            span Винный Николай для двоих под свечи ночи и пение сверчков
+
+                                        td.price
+                                            span.roubl 3100
+
+                                    tr
+                                        td.amount
+                                            span 7
+
+                                        td.name
+                                            span Оранжевый Грейпфрут  и Лодочки
+
+                                        td.price
+                                            span.roubl 2500
+
+                            .tabs__content
+                                table(cellspacing="0")
+                                    tr
+                                        th.amount Колличество
+                                        th.name Наименование
+                                        th.price Цена
+
+                                    tr
+                                        td.amount
+                                            span 4
+
+                                        td.name
+                                            span Винный Николай
+
+                                        td.price
+                                            span.roubl 5500
+
+                                    tr
+                                        td.amount
+                                            span 6
+
+                                        td.name
+                                            span Винный Николай для двоих под свечи ночи и пение сверчков
+
+                                        td.price
+                                            span.roubl 3100
+
+                                    tr
+                                        td.amount
+                                            span 7
+
+                                        td.name
+                                            span Оранжевый Грейпфрут  и Лодочки
+
+                                        td.price
+                                            span.roubl 2500
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/lk.jpg",opacity: 0.5,top: 20,left: 0,center: false,clip: true,show: false});});
+
+
+
+

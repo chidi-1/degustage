@@ -1,0 +1,11 @@
+mixin bread(text, ...items)
+  ul.breadcrumbs
+    li
+      a(href="").fwa-icon.icon-home
+
+    each item in items
+      li
+        a=item
+
+    li
+        span=text

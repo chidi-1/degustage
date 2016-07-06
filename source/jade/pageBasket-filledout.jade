@@ -1,0 +1,158 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+
+    .page.basket
+        section.page-title
+            .width-wrap
+                div
+                    h1 Мои заказы
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span cart
+
+                span.location Все цены и предложения актуальны для
+                    a(href="") Москвы
+
+                .basket-empty.hidden-block
+                    p Ваша корзина пуста. Перейдите в
+                        a(href="") каталог
+                        = "для совершения покупок"
+
+                .basket-full
+                    ul(data-url="s/js/ajax/item-change.php" data-method="post").basket-list
+                        li(data-id="wine_01" ).basket-list__el.counter-wrap
+                            .basket-list__el-img
+                                img(src="s/img/img--catalog-1.jpg" alt /)
+
+                            .basket-list__el-content
+                                .name
+                                    a(href="")    Гаргантюа и пантагрюэль
+
+                                .basket-list__el-about
+                                    p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье.
+
+                                .basket-list__el-amount.form-buttons
+                                    a(href="").button-min.js--button-amount.js--button-min -
+                                    input(type="text" name="amount" maxlength="2" value="1").inp.amount.js--inp-num
+                                    a(href="").button-plus.js--button-amount.js--button-plus +
+
+                                .basket-list__el-total
+                                    span.roubl 4 500
+
+                                div(data-url="s/js/ajax/item-remove.php" data-method="post").basket-list__el-remove
+                                    a(href="").js--remove-position
+
+                        li(data-id="wine_02").basket-list__el
+                            .basket-list__el-img
+                                img(src="s/img/img--catalog-4.jpg" alt /)
+
+                            .basket-list__el-content
+                                .name
+                                    a(href="")    ВИННЫй Николай
+
+                                .basket-list__el-about
+                                    p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье.
+
+                                .basket-list__el-amount.form-buttons
+                                    a(href="").button-min.js--button-amount.js--button-min -
+                                    input(type="text" name="amount" maxlength="2" value="1").inp.amount.js--inp-num
+                                    a(href="").button-plus.js--button-amount.js--button-plus +
+
+                                .basket-list__el-total
+                                    span.roubl 16 500
+
+                                div(data-url="s/js/ajax/item-remove.php" data-method="post").basket-list__el-remove
+                                    a(href="").js--remove-position
+
+                    .basket-total
+                        span Итого
+                            i.roubl 16 500
+
+                        .btn-wrap
+                            a(href="").btn Изменить заказ
+
+                        a(href="").continue Продолжить покупки
+
+                    form(action="" method="post").checkout-form
+
+                        .basket-checkout
+                            h4 Контактные данные
+
+                            .checkout-label
+                                span Михаил Комиссаров
+                                span + 8 908 123 48 56
+                                span sdfd@sdfsd.df
+
+                                .btn-wrap
+                                    a(href="").btn Изменить данные
+
+                        .basket-checkout
+                            h4 Доставка
+
+                            .checkout-label
+
+                                span
+                                    strong Помочь донести до квартиры в Москве по адресу:
+
+                                span Москва, Лазаревский переулок, дом 2, корп. 2. кв. 109
+
+                                span Код домофона: 124786В6756В
+
+                                span
+                                    strong Ближайшая доставка 24 ноября
+
+
+                                .btn-wrap
+                                    a(href="").btn Изменить данные
+
+                        .basket-checkout
+                            h4 Оплата заказа
+
+                            .checkout-label
+                                .radio
+                                    span Картами
+                                    img(src="s/img/icon--visa.jpg" alt /)
+                                    img(src="s/img/icon--mc.jpg" alt /)
+
+                                .btn-wrap
+                                    a(href="").btn Изменить данные
+
+                        .basket-checkout
+                            .checkout-label
+                                .check-wrap
+                                    label.check
+                                        input(type="checkbox" checked name="politic" value="1").hidden-block
+                                        .psevdochecbox
+                                        span Я прочел Положения и условия и информацию о политике конфиденциальности
+
+                                    label.check
+                                        input(type="checkbox"  name="condition" value="1").hidden-block
+                                        .psevdochecbox
+                                        span Я согласен с «Условиями использования»
+
+                                    label.check
+                                        input(type="checkbox"  name="delivery" value="1").hidden-block
+                                        .psevdochecbox
+                                        span Я согласен на рассылку новых акций и предложений
+                                            br
+                                            = "(не более 1 письма в 2 недели)"
+
+                                .btn-wrap
+                                    a(href="").btn.js-checkout-submit Оформить заказ
+
+            script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/filledout.jpg",opacity: 0.5,top: -33,left: 0,center: false,clip: true,show: false});});

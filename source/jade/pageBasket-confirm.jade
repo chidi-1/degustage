@@ -1,0 +1,59 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+
+    .page.basket
+        section.page-title
+            .width-wrap
+                div
+                    h1 Мои заказы
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span cart
+
+                h4 Спасибо! Ваш заказ принят к исполнению
+
+                .basket-confirm
+                    ul
+                        li.basket-confirm__el
+                            .basket-confirm__el-img
+                                img(src="s/img/img--catalog-1.jpg" alt /)
+
+                            .basket-confirm__el-content
+                                .name
+                                    a(href="")    Гаргантюа и пантагрюэль
+
+                                p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье.
+
+                        li.basket-confirm__el
+                            .basket-confirm__el-img
+                                img(src="s/img/img--catalog-1.jpg" alt /)
+
+                            .basket-confirm__el-content
+                                .name
+                                    a(href="")    Винный николай
+
+                                p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье.
+
+
+                .basket-total
+                    span Итого
+                        i.roubl 16 500
+
+                    a(href="").continue Продолжить покупки
+
+            script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/conform.jpg",opacity: 0.5,top: 9,left: 0,center: false,clip: true,show: false});});

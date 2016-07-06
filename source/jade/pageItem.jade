@@ -1,0 +1,247 @@
+block vars
+    - var title='Title'
+
+extends partials/layout-lk
+
+block content
+
+    .page.item
+        section.page-title
+            .width-wrap
+                div
+                    h1 я предпочитаю
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span gargantua
+
+                .item-info.justifyed
+                    .item-info__params
+                        .item-info__params-img.free-del
+                            img(src="s/img/img--item.jpg" alt /)
+
+                        .mini-menu
+                            ul.wrap
+                                li.sub
+                                    a(href="")
+                                        strong GAJA | Гайа
+                                        = "(GAIA & REY | Гайа & Рей 2012)"
+                                    ul.content
+                                        li
+                                            img(src="s/img/icon--wine-param-1.png" alt /)
+                                            span Красное
+
+                                        li
+                                            img(src="s/img/icon--wine-param-2.png" alt /)
+                                            span Франция
+
+
+                                        li
+                                            img(src="s/img/icon--wine-param-3.png" alt /)
+                                            span Сухое
+
+                                        li
+                                            img(src="s/img/icon--wine-param-4.png" alt /)
+                                            span Кот Да Рон, Джерз, Московская область
+
+                                        li
+                                            img(src="s/img/icon--wine-param-5.png" alt /)
+                                            span Крепость 17%
+
+                                        li
+                                            img(src="s/img/icon--wine-param-6.png" alt /)
+                                            span Shiraz, Merlot, Pinot Noir
+
+
+                                li.sub
+                                    a(href="")
+                                        strong GAJA | Гайа
+                                        = "(Something Different | Что-то Другое  2012)"
+
+                                    ul.content
+                                        li
+                                            img(src="s/img/icon--wine-param-1.png" alt /)
+                                            span Красное
+
+                                        li
+                                            img(src="s/img/icon--wine-param-2.png" alt /)
+                                            span Франция
+
+
+                                        li
+                                            img(src="s/img/icon--wine-param-3.png" alt /)
+                                            span Сухое
+
+                                        li
+                                            img(src="s/img/icon--wine-param-4.png" alt /)
+                                            span Кот Да Рон, Джерз, Московская область
+
+                                        li
+                                            img(src="s/img/icon--wine-param-5.png" alt /)
+                                            span Крепость 17%
+
+                                        li
+                                            img(src="s/img/icon--wine-param-6.png" alt /)
+                                            span Shiraz, Merlot, Pinot Noir
+
+                    .item-info__about
+                        h3 Гаргантюа и пантагрюэль
+
+                        p.item-info__about-description Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье.
+
+                        span.item-info__about-price.roubl 4500
+
+                        .item-forms.counter-wrap.counter-wrap-forms
+                            form(action="s/js/ajax/send-ok.php" method="post")
+                                input(type="hidden" name="item_id" value="id_01")
+                                .form-buttons
+                                    a(href="").button-min.js--button-amount.js--button-min -
+                                    input(type="text" name="amount" maxlength="2" value="1").inp.amount.js--inp-num
+                                    a(href="").button-plus.js--button-amount.js--button-plus +
+
+                                a(href="").btn.js--form-submit
+                                    i.fwa-icon.icon-basket
+                                    =" Добавить в корзину"
+
+                            form(action="" method="post").hidden-form
+                                input(type="hidden" name="item_id" value="id_01")
+                                input(type="hidden" name="amount" value="1").amount
+
+                                a(href="").btn Купить в один клик
+
+                                .hidden-content
+
+                                    input(type="text" placeholder="+7").inp.required.inp-phone
+
+                                    label.js--check-lic
+                                        input(type="checkbox" name="lic" ).hidden-block
+
+                                        .psevdocheckbox
+
+                                        span я согласен с офертой
+
+                                    a(href="").btn.one-click.js--form-submit.disabled Купить в один клик
+
+                                    p Оператор позвонит вам
+                                        select(name="time" ).select-styled
+                                            option(value="time_01" checked).justifyed в течение 5 минут
+                                            option(value="time_02") завтра утром после 9:00
+                                            option(value="time_03") завтра утром после 13:00
+                                            option(value="time_04") завтра утром после 17:00
+
+                                    p для уточнения деталей заказа
+
+                        ul.item-info__about-img
+                            li
+                                img(src="s/img/icon--wine-taste-1.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-2.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-3.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-4.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-5.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-6.png" alt /)
+
+                        .item-info__about-text
+                            p В&nbsp;сете 3&nbsp;очень разных вина из&nbsp;сорта Шираз (он&nbsp;же Сира), похожи они только тем, что умеют впечатлять. Собрали в&nbsp;него самую что ни&nbsp;на&nbsp;есть ширазную элиту&nbsp;&mdash; и&nbsp;сделали это заметно дешевле розницы
+
+                            p Папийон&nbsp;&mdash; обдаст строгостью и&nbsp;гудроном, опутает кожаными ремнями&nbsp;&mdash; в&nbsp;общем, даст знать, что такое эталонный сира из&nbsp;Долины Роны. Австралийский шираз Шорт Роу ведет себя иначе&nbsp;&mdash; он&nbsp;утопит в&nbsp;шоколаде, засыпет корицей, там все густо и&nbsp;вызывающе (как мы&nbsp;любим, хотя некоторые в&nbsp;этом даже под пыткой не&nbsp;сознаются). А&nbsp;новозеландец Те&nbsp;Мата&nbsp;&mdash; это кураж и&nbsp;перченая плоть, сдобренная клубникой.
+
+                .item-accessory
+                    .item-accessory__el
+                        a(href="").item-accessory__el-img
+                            img(src="s/img/img--accessory-1.jpg" alt /)
+
+                        a(href="").item-accessory__el-name Мегакрутая закрывашка  для бутылки
+
+                        p В этом месте должен быть размещен чудесный анонс.
+
+                        .item-accessory__el-params
+                            span.roubl 4500
+
+                            a(href="").fwa-icon.icon-basket
+
+                    .item-accessory__el
+                        a(href="").item-accessory__el-img
+                            img(src="s/img/img--accessory-2.jpg" alt /)
+
+                        a(href="").item-accessory__el-name Огненный штопор
+
+                        p Прекрасное место для чудесной акции
+
+                        .item-accessory__el-params
+                            span.roubl 4500
+
+                            a(href="").fwa-icon.icon-basket
+
+                    .item-accessory__el
+                        a(href="").item-accessory__el-img
+                            img(src="s/img/img--accessory-3.jpg" alt /)
+
+                        a(href="").item-accessory__el-name Штука, похожая  на шланг
+
+                        p Великолепное напоминание о&nbsp;чем то&nbsp;заоблачно неземном
+
+                        .item-accessory__el-params
+                            span.roubl 4500
+
+                            a(href="").fwa-icon.icon-basket
+
+                    .item-accessory__el
+                        a(href="").item-accessory__el-img
+                            img(src="s/img/img--accessory-4.jpg" alt /)
+
+                        a(href="").item-accessory__el-name Винный рычаг Николая
+
+                        p Личный мастер-класс николая и&nbsp;Сергея
+
+                        .item-accessory__el-params
+                            span.roubl 4500
+
+                            a(href="").fwa-icon.icon-basket
+
+                .item-comment
+                    .item-comment--img
+                        img(src="s/img/img--expert.png" alt /)
+
+                    .item-comment__text
+                        span.item-comment__text-name Николай
+                            strong НАФТУЛИН
+
+                        span.item-comment__text-position Эксперт
+
+                        p Сидим сравниваем! Невероятно! Это шедевр, как можно делать такие вина?! Они бесконечные! До&nbsp;слёз! Сидим сравниваем! Невероятно! Это шедевр, как можно делать такие вина?! Они бесконечные! До&nbsp;слёз!;)
+
+                    ul.item-comment--photo
+                        li.item-comment--photo-l
+                            img(src="s/img/img--item-photo-l.jpg" alt /)
+
+                        li.item-comment--photo-s
+                            img(src="s/img/img--item-photo-s-1.jpg" alt /)
+
+                        li.item-comment--photo-s
+                            a(href="" style="background: url(s/img/img--item-photo-s-2.jpg) no-repeat 50% 50%") Вино и еда
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/item.jpg",opacity: 0.5,top: 16,left: 4,center: false,clip: true,show: false});});
+
+
+
+

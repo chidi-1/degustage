@@ -1,0 +1,52 @@
+.breadcrumbs
+  display block
+  padding-top 30px
+  padding-bottom 22px
+
+  li
+    display inline-block
+    vertical-align top
+    margin-right 7px
+    position relative
+
+    a, span
+      display block
+      font-size 12px
+      line-height 12px
+      color #c9cacc
+      font-family $fGothamPro_l
+
+    a
+      text-decoration underline
+
+    .icon-home
+      font-family $fIcons
+      font-size 12px
+      line-height 12px
+      color #c9cacc
+      text-decoration none
+
+    .icon-home:after
+      color #c9cacc
+
+  li:after
+    position absolute
+    content '/'
+    font-size 12px
+    line-height 12px
+    color #c9cacc
+    font-family $fGothamPro_l
+    top -1px
+    right -7px
+
+  li:last-child:after
+    display none
+
+  &-link
+    display inline-block
+    vertical-align top
+    font-size 12px
+    font-family $fGothamPro_b
+    text-decoration underline
+    margin-top 27px
+    margin-right 14px

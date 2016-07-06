@@ -1,0 +1,226 @@
+.set
+  &-header
+    padding-top 8px
+    padding-bottom 60px
+
+    li
+      display inline-block
+      vertical-align top
+      width 243px
+      position relative
+
+      img
+        width 243px
+        height 243px
+        border-radius 243px
+
+    li:after,
+    li:before
+      position absolute
+      content ""
+      width 14px
+      height 24px
+      background url("../img/sprite--arrow.png") no-repeat -14px 0
+      top 50%
+      margin-top -16px
+      right -57px
+
+    li:after
+      right -68px
+
+    li:last-child:after,
+    li:last-child:before
+      display none
+
+  &-thanks
+    display block
+    text-align center
+    padding-bottom 69px
+    width 440px
+    margin 0 auto
+
+    h3
+      padding-bottom 11px
+
+    p
+      font-size 12px
+      line-height 16px
+      padding-bottom 23px
+
+  &-contacts
+    border-top 1px solid $cBlack
+    padding-top 30px
+    text-align center
+
+    p
+      font-size 16px
+      line-height 20px
+      padding-bottom 20px
+
+    a
+      display block
+      text-align center
+      font-weight bold
+
+    &--tel
+      font-size 24px
+      line-height 26px
+      margin-bottom 5px
+
+    &--mail
+      font-size 20px
+      line-height 26px
+      text-decoration underline
+      margin-bottom 20px
+
+    .btn-wrap
+      width 440px
+      margin 0 auto
+
+  &-add
+    display block
+    text-align center
+    padding-bottom 65px
+
+    h3
+      padding-bottom 20px
+
+    .set-form.disaled
+      .text
+        .inp
+            border 1px solid transparent
+
+        .remove-wine
+          display none
+
+    .set-form
+      width 440px
+      margin 0 auto
+
+      .set-wine
+        label
+          display block
+          position relative
+
+          .remove-wine
+            position absolute
+            top 16px
+            right 10px
+            width 7px
+            height 7px
+            background url("../img/icon--del.png") no-repeat 0 0
+            z-index 3
+
+      .inp
+        display block
+        border 1px solid #d3d3d3
+        text-align center
+        height 36px
+        margin-bottom 17px
+        width 440px
+        font-size 14px
+
+      .inp::placeholder
+        color #d3d3d3
+
+      .inp:focus::placeholder
+        color transparent
+
+      .add-wine
+        display inline-block
+        vertical-align top
+        color #979797
+        font-size 12px
+        line-height 30px
+        position relative
+        padding-left 40px
+        margin-bottom 15px
+
+      .add-wine:before
+        position absolute
+        content "+"
+        width 30px
+        height 30px
+        border 1px solid #979797
+        border-radius 30px
+        text-align center
+        line-height 30px
+        left 0
+
+      p
+        font-size 12px
+        line-height 16px
+        margin-bottom 15px
+        color #999999
+
+        a
+          display inline-block
+          vertical-align top
+          text-decoration underline
+          font-size 12px
+          line-height 16px
+          padding 0 5px
+          color #999999
+          font-family $fGothamPro_b
+
+      .file
+        input.inp
+          display none
+
+        .jq-file
+          border-radius 0
+          border none
+          box-shadow none
+          background #b5b5b5
+          height 36px
+          position relative
+          cursor pointer
+          margin-bottom 10px
+
+          .jq-file__name,
+          .jq-file__browse
+            display none
+
+        .jq-file:after
+          position absolute
+          content 'Загрузить фото'
+          color #FFFFFF
+          font-family $fGothamPro
+          font-size 14px
+          left 0
+          right 0
+          top 10px
+          text-align center
+
+        .jq-file:before
+          position absolute
+          font-size 14px
+          left 130px
+          top 11px
+          font-family $fIcons
+          content "\f030"
+          color #ffffff
+
+        .text
+          display block
+          text-align center
+          padding-bottom 30px
+
+          span
+            display inline-block
+            vertical-align top
+            margin 0 5px
+            font-size 12px
+            line-height 18px
+            color #999999
+            font-family $fGothamPro
+            padding-left 20px
+
+          span:before
+            content "\f1c5"
+            font-family $fIcons
+            font-size 12px
+            line-height 16px
+            color #999999
+            left 0
+

@@ -1,0 +1,29 @@
+.btn-wrap
+  display block
+  text-align center
+
+.btn
+  font-size 19px
+  text-transform uppercase
+  color $cGray
+  border 1px solid $cGray
+  padding 13px 42px 11px
+  display inline-block
+  vertical-align top
+  margin 0 auto
+  cursor pointer
+  font-family $fGothamPro
+
+  &:hover
+      text-decoration none
+
+  &:active
+      text-decoration none
+
+  &_disabled,
+  &[disabled]
+      background #cfcfcf
+      box-shadow none
+
+.btn.disabled
+  opacity 0.5

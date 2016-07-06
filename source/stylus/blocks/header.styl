@@ -1,0 +1,108 @@
+.header
+  padding 34px 0 23px
+  background #ffffff
+  position relative
+  z-index 1000
+  border-bottom 1px solid transparent
+
+  &-left,
+  &-right
+    display inline-block
+    vertical-align top
+    max-width 50%
+
+  &--town,
+  &--user
+    display inline-block
+    vertical-align top
+    padding-top 16px
+    color #999999
+    font-size 12px
+
+  &--logo
+    display inline-block
+    vertical-align top
+    width 215px
+    height 57px
+    margin-right 20px
+
+    img
+      display block
+      width 215px
+      height 57px
+
+  &--links
+    white-space nowrap
+    display inline-block
+    vertical-align top
+    padding-top 4px
+    margin-right 7px
+    margin-left 10px
+
+    li:first-child
+      margin-left 0
+
+    li
+      display inline-block
+      vertical-align top
+      margin-left 23px
+      margin-top 10px
+
+      a
+        display block
+
+        img
+          width 30px
+          height 30px
+          border-radius 30px
+
+    li.showRight
+      margin-top 0
+
+      img
+        width 50px
+        height 50px
+        border-radius 50px
+
+    li.header--basket
+      position relative
+
+    li.header--basket.basket-full:after
+      position absolute
+      content ''
+      width 6px
+      height 6px
+      border-radius 6px
+      background #3c6a32
+      left 50%
+      margin-left -3px
+      bottom -5px
+
+.page-title
+  background url("../img/img--slider-index-1.jpg") no-repeat 50% 50%
+  background-size cover
+
+  .width-wrap
+    height 320px
+    display flex
+    align-items center
+    justify-content center
+    flex-flow row wrap
+
+    h1
+      color #ffffff
+
+    p
+      display block
+      padding 0 140px
+      color #ffffff
+      font-size 20px
+      line-height 24px
+      padding-bottom 18px
+      text-align center
+      text-transform uppercase
+
+    .btn
+      color #ffffff
+      border-color #ffffff
+

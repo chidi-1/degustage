@@ -1,0 +1,55 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+
+    .page.recipe
+        section.page-title
+            .width-wrap
+                div
+                    h1 Я предпочитаю
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span howwework
+
+                ul.recipe-list
+                    li
+                        img(src="s/img/img--recipe-1.png" alt /)
+                        .recipe-list__content
+                            h3 ВИНО И МЯСО
+
+                            p Генерал-майор артиллерии; глава секретного отделения по&nbsp;наблюдению за&nbsp;иностранными посольствами и&nbsp;военными агентами (1904&ndash;1909); начальник Енисейского, Пермского, Саратовского, Вятского ГЖУ (1909&ndash;1915).
+
+                    li
+                        .recipe-list__content
+                            h3 ВИНО И МОРЕПРОДУКТЫ
+
+                            p Генерал-майор артиллерии; глава секретного отделения по&nbsp;наблюдению за&nbsp;иностранными посольствами и&nbsp;военными агентами (1904&ndash;1909); начальник Енисейского, Пермского, Саратовского, Вятского ГЖУ (1909&ndash;1915).
+
+                        img(src="s/img/img--recipe-2.png" alt /)
+
+                    li
+                        img(src="s/img/img--recipe-3.png" alt /)
+                        .recipe-list__content
+                            h3 ВИНО И РЫБА
+
+                            p Генерал-майор артиллерии; глава секретного отделения по&nbsp;наблюдению за&nbsp;иностранными посольствами и&nbsp;военными агентами (1904&ndash;1909); начальник Енисейского, Пермского, Саратовского, Вятского ГЖУ (1909&ndash;1915).
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/recipelist.png",opacity: 0.5,top: 26,left: 0,center: false,clip: true,show: false});});
+
+
+
+

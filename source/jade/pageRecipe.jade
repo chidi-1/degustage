@@ -1,0 +1,135 @@
+block vars
+    - var title='Title'
+
+extends partials/layout-lk
+
+block content
+
+    .page.recipe
+        section.page-title
+            .width-wrap
+                div
+                    h1 Вино и Мясо
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") food
+
+                    li
+                        span vine_and_meat
+
+                h4 Вы можете посмотреть остальные блюда
+
+                .btn-wrap
+                    a(href="" id="showLeftPush").btn.showLeftPush Все рецепты
+
+                ul.recipe-cat-list.load-container
+                    li
+                        a(href="").img
+                            img(src="s/img/img--recipe-4.png" alt /)
+
+                        a(href="").title
+                            h3 Стейк комиссаров
+
+                        p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье. Идеально для большой шумной компании.
+
+                        .recipe-cat-list__icons
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-eye
+                                span 326
+
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-comment
+                                span 34 325
+
+                    li
+                        a(href="").img
+                            img(src="s/img/img--recipe-5.png" alt /)
+
+                        a(href="").title
+                            h3 Ягненок николай
+
+                        p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье. Идеально для большой шумной компании. А также для тех, кто любит танцевать танго в костюмах и вечерних платьях, предаваясь чуесному пороку на фоне заходящего солнца.
+
+                        .recipe-cat-list__icons
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-eye
+                                span 326
+
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-comment
+                                span 34 325
+
+                    li
+                        a(href="").img
+                            img(src="s/img/img--recipe-6.png" alt /)
+
+                        a(href="").title
+                            h3 курица маша с розмарином
+
+                        p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье.
+
+                        .recipe-cat-list__icons
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-eye
+                                span 326
+
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-comment
+                                span 34 325
+
+                    li
+                        a(href="").img
+                            img(src="s/img/img--recipe-7.png" alt /)
+
+                        a(href="").title
+                            h3 Котлетки сергея
+
+                        p Отличный набор для тех, кто любит танцевать, петь в компании друзей, шутить за столом и разбивать бокалы на счастье. Идеально для большой шумной компании.
+
+                        .recipe-cat-list__icons
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-eye
+                                span 326
+
+                            .recipe-cat-list__icons-el
+                                i.fa.fa-comment
+                                span 34 325
+
+                a(href="" data-category="cat_01" data-url="s/js/ajax/load.php" data-method="post").load-more.js--load-more Загрузить еще
+
+                .recipe-slider-wrap
+                    h4 Вас могут заинтересовать другие блюда
+
+                    .recipe-slider
+                        .recipe-slider__el
+                            a(href="").img
+                                img(src="s/img/img--recipe-1.png")
+
+                            a(href="").name Вино и морепродукты
+
+                        .recipe-slider__el
+                            a(href="").img
+                                img(src="s/img/img--recipe-2.png")
+
+                            a(href="").name Вино и рыба
+
+                        .recipe-slider__el
+                            a(href="").img
+                                img(src="s/img/img--recipe-3.png")
+
+                            a(href="").name Вино и картошка
+
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/recipe.jpg",opacity: 0.5,top: 12,left: 0,center: false,clip: true,show: false});});
+
+
+
+

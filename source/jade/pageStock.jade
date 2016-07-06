@@ -1,0 +1,149 @@
+block vars
+    - var title='Title'
+
+extends partials/layout-lk
+
+block content
+
+    .page.stock
+        section.page-title
+            .width-wrap
+                div
+                    h1 Акция транзакция
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span personal
+
+                .stock-params
+                    h4 Акция недели
+
+                    ul.justifyed
+                        li
+                            p
+                                strong Время начала акции:
+                                =" 15 декабря 2015"
+                                strong 18:00
+
+                        li
+                            p
+                                strong Время окончания акции:
+                                =" 15 декабря 2015"
+                                strong 18:00
+
+                        li
+                            p
+                                strong Осталось в наличие:
+                                ="24 бутылки"
+
+                        li
+                            p
+                                strong Уже продано:
+                                =" 12 бутылок"
+
+                .stock-item.justifyed
+                    img(src="s/img/img--bottle.jpg" alt /)
+
+                    .content
+                        h3 Petrus Shmetrus 1783
+                        span.about Вино не для всех. Для тех, кто ищет богатый, насыщенный вкус
+
+                        ul.stock-item--taste
+                            li
+                                img(src="s/img/icon--wine-taste-1.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-2.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-3.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-4.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-5.png" alt /)
+
+                            li
+                                img(src="s/img/icon--wine-taste-6.png" alt /)
+
+
+                        .stock-item--text
+                            p В&nbsp;сете 3&nbsp;очень разных вина из&nbsp;сорта Шираз (он&nbsp;же Сира), похожи они только тем, что умеют впечатлять. Собрали в&nbsp;него самую что ни&nbsp;на&nbsp;есть ширазную элиту&nbsp;&mdash; и&nbsp;сделали это заметно дешевле розницы
+
+                            p Папийон&nbsp;&mdash; обдаст строгостью и&nbsp;гудроном, опутает кожаными ремнями&nbsp;&mdash; в&nbsp;общем, даст знать, что такое эталонный сира из&nbsp;Долины Роны. Австралийский шираз Шорт Роу ведет себя иначе&nbsp;&mdash; он&nbsp;утопит в&nbsp;шоколаде, засыпет корицей, там все густо и&nbsp;вызывающе (как мы&nbsp;любим, хотя некоторые в&nbsp;этом даже под пыткой не&nbsp;сознаются). А&nbsp;новозеландец Те&nbsp;Мата&nbsp;&mdash; это кураж и&nbsp;перченая плоть, сдобренная клубникой.
+
+                .stock-price
+                    ul.justifyed
+                        li
+                            span Цена на winestyle:
+                            span.roubl 630 500
+                        li.super
+                            span СУПЕРЦЕНА
+                            span.roubl 430 500
+                        li
+                            span Цена на alcovip:
+                            span.roubl 730 500
+
+                    .stock-price__form.counter-wrap.counter-wrap-forms
+                        form(action="s/js/ajax/send-ok.php" method="post")
+                            input(type="hidden" name="item_id" value="id_01")
+                            .form-buttons
+                                a(href="").button-min.js--button-amount.js--button-min -
+                                input(type="text" name="amount" maxlength="2" value="1").inp.amount.js--inp-num
+                                a(href="").button-plus.js--button-amount.js--button-plus +
+
+                            a(href="").btn.js--form-submit
+                                i.fwa-icon.icon-basket
+                                =" Добавить в корзину"
+
+                        form(action="" method="post").hidden-form
+                            input(type="hidden" name="item_id" value="id_01")
+                            input(type="hidden" name="amount" value="1").amount
+
+                            a(href="").btn Купить в один клик
+
+                            .hidden-content
+
+                                input(type="text" placeholder="+7").inp.required.inp-phone
+
+                                label.js--check-lic
+                                    input(type="checkbox" name="lic" ).hidden-block
+
+                                    .psevdocheckbox
+
+                                    span я согласен с офертой
+
+                                a(href="").btn.one-click.js--form-submit.disabled Купить в один клик
+
+                                p Оператор позвонит вам
+                                    select(name="time" ).select-styled
+                                        option(value="time_01" checked).justifyed в течение 5 минут
+                                        option(value="time_02") завтра утром после 9:00
+                                        option(value="time_03") завтра утром после 13:00
+                                        option(value="time_04") завтра утром после 17:00
+
+                                p для уточнения деталей заказа
+
+                .stock-more
+                    h4 Подробнее об акции
+
+                    iframe(src="https://player.vimeo.com/video/156015647" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/stock.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+

@@ -1,0 +1,35 @@
+block vars
+
+header.header
+    .width-wrap.justifyed
+        .header-left
+            a(href="").header--logo
+                img(src='s/img/header--logo-inner.png' alt /)
+
+            a(href="").header--town Москва
+
+        .header-right
+            span.header--user Пользователь Константин
+
+            ul.header--links
+                li
+                    a(href="enter.html" class="fancybox.ajax").fancy
+                        img(src="s/img/icon--lk.png" alt /)
+
+                li.header--basket.basket-full
+                    a(href="")
+                        img(src="s/img/icon--basket.png" alt /)
+
+                li
+                    a(href="" id="showTop").showTopPush
+                        img(src="s/img/icon--search.png" alt /)
+
+                li.showRight
+                    a(href="" id="showRightPush").showRightPush
+                        img(src="s/img/icon--hamburger.png" alt /)
+
+.cbp-spmenu-top
+    .width-wrap
+        form(action="" method="post").main-form.search-form
+            input(type="text" name="search" placeholder="Введите название вина, которое вы ищите, название набора или блюда").inp.required
+            a(href="").fwa-icon.icon-search.js--form-submit

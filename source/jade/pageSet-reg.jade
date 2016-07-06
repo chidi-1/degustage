@@ -1,0 +1,91 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+
+    .page.set
+        section.page-title
+            .width-wrap
+                div
+                    h1 Свой набор
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span svoinabor
+
+                ul.set-header.justifyed
+                    li
+                        img(src="s/img/img--set-1.jpg" alt /)
+
+                    li
+                        img(src="s/img/img--set-2.jpg" alt /)
+
+                    li
+                        img(src="s/img/img--set-3.jpg" alt /)
+
+                .set-add
+                    h3 Какое вино вы хотите увидеть
+                     br
+                     = "в наборе?"
+
+                    form(action="" method="post").set-form
+                        .set-wine
+                            label
+                                input(type="text" name="add_to_set1" placeholder="Например, Кьянти Классико-Риечине").inp
+
+                        a(href="").add-wine.js--add-wine Добавить еще одно вино
+
+
+                .registration
+                    .justifyed
+                        .left-form
+                            h3 Вход в систему
+                            p Введите ваши учетные данные, если вы уже зарегестрированы
+
+                            form(action="" method="post").main-form
+                                input(type="text" name="mail" placeholder="Адрес электронной почты").inp.inp-mail.required
+                                input(type="password" name="pass" placeholder="Пароль").inp.required
+
+                                .btn-wrap
+                                    a(href="").btn.js-form-submit Войти
+
+                            a(href="").forgott-pass Забыли пароль?
+
+                        .right-form
+                            h3 Зарегистрируйтесь
+                            p Зарегистрируйтесь на&nbsp;сайте, чтобы своевременно получать информацию о&nbsp;последних акциях компании, скидках на&nbsp;новую продукцию, а&nbsp;также будьте в&nbsp;курсе новых акций.
+
+                            form(action="" method="post").main-form
+                                input(type="text" name="name" placeholder="Ваше имя").inp.required
+                                input(type="text" name="surname" placeholder="Ваша фамилия").inp.required
+                                input(type="text" name="mail" placeholder="Адрес электронной почты").inp.inp-mail.required
+                                input(type="password" name="pass" placeholder="Пароль (минимум 6 символов)").inp.required
+
+                                .btn-wrap
+                                    a(href="").btn.js-form-submit Зарегистрироваться
+
+                            .form-social
+                                span Войти через
+
+                                a(href="")
+                                    img(src="s/img/icon--fb.jpg" alt /)
+
+                                a(href="")
+                                    img(src="s/img/icon--vk.jpg" alt /)
+
+                    .no-reg
+                        a(href="") Продолжить без регистрации
+
+            script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/set-reg.jpg",opacity: 0.5,top: 15,left: 0,center: false,clip: true,show: false});});

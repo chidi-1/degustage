@@ -1,0 +1,61 @@
+block vars
+    - var title='Title'
+
+extends partials/layout-lk
+
+block content
+
+    .page.registration
+        section.page-title
+            .width-wrap
+                div
+                    h1 Вход в систему
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        span registration
+
+                .justifyed
+                    .left-form
+                        h3 Вход в систему
+                        p Введите ваши учетные данные, если вы уже зарегестрированы
+
+                        form(action="" method="post").main-form
+                            input(type="text" name="mail" placeholder="Адрес электронной почты").inp.inp-mail.required
+                            input(type="password" name="pass" placeholder="Пароль").inp.required
+
+                            .btn-wrap
+                                a(href="").btn.js-form-submit Войти
+
+                        a(href="").forgott-pass Забыли пароль?
+
+                    .right-form
+                        h3 Зарегистрируйтесь
+                        p Зарегистрируйтесь на&nbsp;сайте, чтобы своевременно получать информацию о&nbsp;последних акциях компании, скидках на&nbsp;новую продукцию, а&nbsp;также будьте в&nbsp;курсе новых акций.
+
+                        form(action="" method="post").main-form
+                            input(type="text" name="name" placeholder="Ваше имя").inp.required
+                            input(type="text" name="surname" placeholder="Ваша фамилия").inp.required
+                            input(type="text" name="mail" placeholder="Адрес электронной почты").inp.inp-mail.required
+                            input(type="password" name="pass" placeholder="Пароль (минимум 6 символов)").inp.required
+
+                            .btn-wrap
+                                a(href="").btn.js-form-submit Зарегистрироваться
+
+                        .form-social
+                            span Войти через
+
+                            a(href="")
+                                img(src="s/img/icon--fb.jpg" alt /)
+
+                            a(href="")
+                                img(src="s/img/icon--vk.jpg" alt /)
+
+            script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/registration.jpg",opacity: 0.5,top: 6,left: 0,center: false,clip: true,show: false});});

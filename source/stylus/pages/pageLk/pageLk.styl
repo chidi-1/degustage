@@ -1,0 +1,299 @@
+.lk
+  &-data
+    display block
+    text-align left
+    padding-top 8px
+    padding-bottom 44px
+
+    &--img
+      display inline-block
+      vertical-align top
+      width 202px
+      height 202px
+      border-radius 202
+      overflow hidden
+      margin-right 37px
+      margin-left 150px
+
+      img
+        display block
+
+    &--content
+      display inline-block
+      vertical-align top
+      width 445px
+      padding-top 14px
+
+      ul
+        display block
+
+        li
+          display block
+          margin-bottom 9px
+          position relative
+
+          span.field-name
+            display inline-block
+            vertical-align top
+            font-size 12px
+            font-family $fGothamPro_b
+            width 144px
+
+          span.status
+            position absolute
+            right -76px
+            top -4px
+            color #5f9824
+            text-transform uppercase
+            font-size 10px
+            font-family $fGothamPro_b
+
+            i
+              color #5f9824
+              font-weight normal
+
+          .inp
+            display inline-block
+            vertical-align top
+            width 292px
+            padding-left 30px
+            height 28px
+            border 2px solid #e0e0e0
+            font-size 12px
+            font-family $fGothamPro_l
+
+          .radio
+            display inline-block
+            vertical-align top
+            margin 0 3px
+
+            input
+              display inline-block
+              vertical-align top
+              margin-top 7px
+              margin-right 0
+              margin-left 0
+
+            span
+              display inline-block
+              vertical-align top
+              font-family $fGothamPro_l
+              padding-left 5px
+              width auto
+              font-size 12px
+
+            img
+              display inline-block
+              vertical-align top
+              height 18px
+              margin-right 7px
+              margin-top 4px
+
+    &--content.disabled
+      .inp
+        border-color transparent
+
+      .radio
+        span,
+        img,
+        input
+          display none
+
+        input:checked
+          display inline-block
+          vertical-align top
+
+        input:checked + span,
+        input:checked + span + img,
+        input:checked + span + img + img
+          display inline-block
+          vertical-align top
+
+    .btn-wrap
+      display block
+      text-align center
+      padding-top 33px
+
+  &-history
+    display block
+
+    &__orders
+      display inline-block
+      vertical-align top
+      width 440px
+
+      span
+        height 30px
+        display block
+        text-align center
+        line-height 30px
+        font-size 12px
+        font-family $fGothamPro_b
+        background #e2e2e2
+
+      .tabs__caption
+        display block
+        width 80px
+        margin 22px auto 0
+
+        li
+          display block
+          text-align left
+          font-size 12px
+          line-height 16px
+          font-family $fGothamPro_b
+          text-decoration underline
+          cursor pointer
+          margin-bottom 17px
+
+        li.active
+          font-family $fGothamPro
+          text-decoration none
+          cursor default
+
+    &__info
+      display inline-block
+      vertical-align top
+      width 440px
+
+      .tabs__content
+        display none
+
+      .tabs__content.active
+        display block
+
+        table
+          width 100%
+
+          .amount
+            text-align center
+            width 115px
+
+            span
+              display inline-block
+              vertical-align top
+              width 20px
+              height 20px
+              border 1px solid #b5b5b5
+              border-radius 20px
+              text-align center
+              line-height 20px
+              font-family $fGothamPro_l
+              font-size 12px
+
+          .name
+            width 225px
+            text-align left
+            padding-left 20px
+
+            span
+              font-size 12px
+              line-height 14px
+              padding-top 4px
+              font-family $fGothamPro_l
+              display block
+              width 185px
+
+            ul
+              display block
+              padding-left 10px
+
+              li
+                display block
+                font-family $fGothamPro_l
+                font-style italic
+                font-size 10px
+                line-height 20px
+
+          .price
+            width 80px
+            text-align center
+
+            span
+              font-size 12px
+              line-height 24px
+              font-family $fGothamPro_l
+
+          .rating
+            width 70px
+            text-align center
+
+            .total-rating
+              display block
+
+              span
+                display inline-block
+                vertical-align top
+                font-family $fIcons !important
+                font-size 12px !important
+                margin 0 2px
+
+            .item-rating
+
+              span
+                display inline-block
+                vertical-align top
+                font-family $fIcons !important
+                font-size 12px !important
+                margin 0 2px
+                cursor pointer !important
+                line-height 20px
+
+          tr
+            .comment
+              padding-left 47px
+              padding-top 25px
+              padding-bottom 13px
+
+              span
+                display block
+                font-size 12px
+                font-family $fGothamPro_b
+                padding-bottom 4px
+
+              p
+                display block
+                font-size 12px
+                line-height 20px
+
+              .inp
+                resize none
+                width 100%
+                padding-left 5%
+                height 55px
+                padding-top 10px
+                border 1px solid #8a8884
+                margin-bottom 12px
+                font-size 12px
+
+              .btn-wrap
+                text-align right
+
+                .btn
+                  background #aaaaaa
+                  color #ffffff
+                  border none
+                  font-size 10px
+                  padding-top 0
+                  padding-bottom 0
+
+          th
+            height 30px
+            background #f5f5f5
+            font-family $fGothamPro_b
+            font-size 12px
+
+          td
+            vertical-align top
+            padding-top 13px
+
+        tr.height
+          td
+            padding-top 0
+
+.lk.lk-expert
+  .lk-history__orders
+    width 200px
+
+  .lk-history__info
+    width 680px

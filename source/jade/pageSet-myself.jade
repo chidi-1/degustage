@@ -1,0 +1,91 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+    .page.set
+        section.page-title
+            .width-wrap
+                div
+                    h1 Свой набор
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span svoinabor
+
+                ul.set-header.justifyed
+                    li
+                        img(src="s/img/img--set-1.jpg" alt /)
+
+                    li
+                        img(src="s/img/img--set-2.jpg" alt /)
+
+                    li
+                        img(src="s/img/img--set-3.jpg" alt /)
+
+                .set-add
+                    h3 Какое вино вы хотите увидеть
+                     br
+                     = "в наборе?"
+
+                    .hidden-block.layout-input
+                        label
+                            input(type="text" name="add_to_set" placeholder="Например, Кьянти Классико-Риечине").inp
+                            a(href="").js--remove-wine.remove-wine
+
+                    form(action="" method="post").set-form.main-form
+                        .set-wine
+                            label.text
+                                input(type="text"  name="add_to_set1" placeholder="Например, Кьянти Классико-Риечине").inp
+                                a(href="").js--remove-wine.remove-wine
+
+                        a(href="" data-text-empty="Добавить вино" data-text-full="Добавить еще одно вино").add-wine.js--add-wine.set-self Добавить еще одно вино
+
+                        label.text
+                            input(type="name" value=""  placeholder="Ваше имя и фамилия").inp.required
+
+                        label.text
+                            input(type="phone" value=""  placeholder="Номер телефона").inp.required.inp-phone
+
+                        label.text
+                            input(type="mail" value=""  placeholder="Адрес электронной почты").inp.required.inp-mail
+
+                        p Если мы&nbsp;не&nbsp;найдем в&nbsp;точности те&nbsp;вина, то&nbsp;пришлем равноценное предложение на&nbsp;почту.
+
+                        label.file
+                            input(type="file" id="file1" multiple name="file").inp.select-styled
+                            .text
+
+
+                        p Если вы зарегистрированы на сайте, то можете
+                            a(href="") Войти
+                            =" со своими учетными данными."
+
+                        p Если у вас есть фотографии бутылки (лицевая и контрэтикетки), загрузите ее сюда. Это позволит нам быстрее найти ваше любимое вино.
+
+                        .btn-wrap
+                            a(href="").btn.js-form-submit Заказать набор
+
+                .set-contacts
+                    p Если вы хотите изменить уже существующий заказ,
+                     br
+                     = "просто позвоните нам или напишите:"
+                    a(href="tel:84957777777").set-contacts--tel 8.495.777.77.77
+                    a(href="mailto:order@degustage.com").set-contacts--mail order@degustage.com
+                    p Возможно вам удобнее, чтобы мы перезвонили вам:
+
+                    .btn-wrap
+                        a(href="").btn заказать обратный звонок
+
+            script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/set-self.jpg",opacity: 0.5,top: 16,left: 0,center: false,clip: true,show: false});});

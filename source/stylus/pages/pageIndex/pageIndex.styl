@@ -1,0 +1,112 @@
+.index
+  &-title.page-title
+    background url("../img/bg--index-promo.jpg") no-repeat 50% 50%
+    background-size cover
+
+    .width-wrap
+      height 495px
+
+  &--taste
+    padding 48px 0 0
+
+    h3
+      padding-bottom 14px
+      font-size 20px
+      font-family $fGothamPro
+
+    p
+      display block
+      padding 0 240px
+      padding-bottom 49px
+      text-align center
+
+  .taste-slider
+    display block
+    padding-bottom 55px
+    position relative
+
+    .owl-controls
+      position absolute
+      right -20px
+      top 0
+      height 330px
+      display flex
+      align-items center
+
+      .owl-dots
+        display block
+
+        .owl-dot
+          display block
+          width 7px
+          height 7px
+          border-radius 7px
+          border 1px solid $cGray
+          margin 7px 0
+
+        .owl-dot.active
+          background $cGray
+
+    &__el
+      width 920px
+      padding-bottom 10px
+
+      &--img
+        display block
+        position relative
+        height 330px
+        background-size cover
+        margin-bottom 30px
+
+        span
+          display block
+          padding-top 111px
+          font-family $fGothamPro_b
+          color #ffffff
+          font-size 70px
+          line-height 96px
+          text-align center
+          text-transform uppercase
+
+      .justifyed
+        margin-bottom 28px
+
+        .one-half
+          display inline-block
+          vertical-align top
+          width 450px
+
+          p
+            text-align left
+            padding 0
+
+          .tags-list
+            display block
+            text-align center
+
+
+          .btn
+            padding 13px 51px 9px
+
+  &--banners
+
+    .banners-list
+      display block
+      margin-left -33px
+
+      li
+        display inline-block
+        vertical-align top
+        margin-left 33px
+        width 205px
+
+        a
+          display table-cell
+          width 205px
+          height 205px
+          background-size cover
+          vertical-align middle
+          text-align center
+          color #ffffff
+          text-transform uppercase
+          font-family $fGothamPro_b

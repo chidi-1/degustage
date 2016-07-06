@@ -1,0 +1,92 @@
+.howwework
+  display block
+
+  &-list
+    display block
+    padding-top 8px
+    padding-bottom 42px
+
+    &__el
+      display block
+      padding-bottom 25px
+
+      img
+        display inline-block
+        vertical-align top
+        width 333px
+        height 333px
+        border-radius 333px
+
+      .content
+        display inline-block
+        vertical-align top
+        width 430px
+        padding-top 57px
+
+        h3
+          padding-bottom 19px
+          text-transform none
+          text-align left
+
+        p
+          display block
+          font-family $fGothamPro_l
+          font-size 16px
+          line-height 20px
+
+    &__el:nth-child(odd)
+      img
+        margin-left 40px
+        margin-right 100px
+
+    &__el:nth-child(even)
+      img
+        margin-left 100px
+
+  .howwework-faq
+    border-top 1px solid #cccccc
+    padding-top 39px
+
+    h2
+      padding-bottom 28px
+
+    .mini-menu
+      overflow hidden
+
+      .sub
+        display block
+        padding-bottom 10px
+        padding-left 22px
+
+        a
+          display block
+          font-family $fGothamPro
+          margin-bottom 13px
+          position relative
+
+        a:before
+          position absolute
+          content ''
+          border-radius  13px
+          width 14px
+          height 14px
+          left -20px
+          top 7px
+          background url("../img/icon-min.png")
+
+        a.active:before
+          background url("../img/icon--pl.png")
+
+        .content
+          height 0
+          overflow hidden
+
+          p
+            display block
+            margin-bottom 15px
+            font-size 12px
+            line-height 16px
+            font-family $fGothamPro_l
+
+          p:last-child
+            margin-bottom 0

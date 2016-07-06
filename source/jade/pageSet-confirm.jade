@@ -1,0 +1,55 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+
+    .page.set
+        section.page-title
+            .width-wrap
+                div
+                    h1 Свой набор
+
+                    p Первый интернет-портал, который подберёт вино под ваш вкус. Просто выбери свой вкус из&nbsp;трёх вариантов представленных ниже.
+
+        section.page-content
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="").fwa-icon.icon-home
+
+                    li
+                        a(href="") catalogue
+
+                    li
+                        span svoinabor
+
+                ul.set-header.justifyed
+                    li
+                        img(src="s/img/img--set-1.jpg" alt /)
+
+                    li
+                        img(src="s/img/img--set-2.jpg" alt /)
+
+                    li
+                        img(src="s/img/img--set-3.jpg" alt /)
+
+                .set-thanks
+                    h3 Спасибо! Ваш набор создается
+                    p В течение одного рабочего дня вам на почту придет предложение от degustage.com с подробным описанием набора: каждого вина, подобранного с учетом ваших предпочтений.
+                    .btn-wrap
+                        a(href="").btn Заказать новый набор
+
+                .set-contacts
+                    p Если вы хотите изменить уже существующий заказ,
+                     br
+                     = "просто позвоните нам или напишите:"
+                    a(href="tel:84957777777").set-contacts--tel 8.495.777.77.77
+                    a(href="mailto:order@degustage.com").set-contacts--mail order@degustage.com
+                    p Возможно вам удобнее, чтобы мы перезвонили вам:
+
+                    .btn-wrap
+                        a(href="").btn заказать обратный звонок
+
+            script(type="text/javascript" ) $(function(){$.pixlayout({src: "s/img/temp/set-conform.jpg",opacity: 0.5,top: 15,left: 0,center: false,clip: true,show: false});});

@@ -1,0 +1,303 @@
+.stock
+
+  .stock-params
+    padding-bottom 40px
+    border-bottom 1px solid #cccccc
+    margin-bottom 40px
+
+    ul
+      padding-top 38px
+      padding-left 50px
+
+      li
+        width 22%
+        text-align left
+
+        p
+          display block
+          font-size 14px
+          line-height 20px
+          font-family $fGothamPro_l
+
+          strong
+            display block
+            font-family $fGothamPro_b
+
+  .stock-item
+    padding-left 50px
+    border-bottom 1px solid #cccccc
+    padding-bottom 30px
+    margin-bottom 60px
+
+    img
+      display inline-block
+      vertical-align top
+      max-height 360px
+
+    .content
+      display inline-block
+      vertical-align top
+      text-align left
+      width 630px
+      padding-top 15px
+
+      h3
+        text-align left
+
+      span.about
+        display block
+        color $cGray
+        font-size 12px
+        line-height 16px
+        padding-bottom 20px
+
+      .stock-item--taste
+        margin-left -17px
+        margin-bottom 34px
+
+        li
+          display inline-block
+          vertical-align top
+          margin-left 17px
+
+          img
+            display block
+            width 59px
+            height 59px
+            border-radius 59px
+
+      .stock-item--text
+        p
+          font-size 12px
+          line-height 16px
+          margin-bottom 14px
+
+  .stock-price
+    padding-left 50px
+    border-bottom 1px solid #cccccc
+
+    ul.justifyed
+      padding  0 120px
+
+      li
+        display inline-block
+        vertical-align top
+
+        span
+          display block
+          text-align center
+          font-size 14px
+          line-height 20px
+          font-weight bold
+
+      li.super
+        span
+          font-size 17px
+          line-height 20px
+          text-transform uppercase
+
+        span.roubl
+          font-size 34px
+          line-height 40px
+          text-transform none
+
+
+    .stock-price__form
+      display block
+      text-align center
+      width 270px
+      margin 12px auto 42px
+
+      .form-buttons
+        display block
+        text-align center
+        padding-top 8px
+        padding-bottom 21px
+
+
+        a,
+        .inp
+          display inline-block
+          vertical-align middle
+          margin 0 5px
+          color #666666
+          font-size 20px
+          line-height 30px
+
+        .inp
+          width 28px
+          height 28px
+          line-height 28px
+          border-radius 28px
+          border 1px solid #666666
+          text-align center
+          outline none
+          padding-left 0
+
+      .btn
+        width 100%
+        font-size 15px
+        padding 6px 0
+        margin-bottom 4px
+        color #a3a3a3
+        border-color #a3a3a3
+
+        i
+          font-size 15px
+          color #a3a3a3
+          padding-right 5px
+
+        i:after
+          color #a3a3a3
+          font-size 15px
+
+      .hidden-form
+        position relative
+
+        .btn
+          background #a3a3a3
+          color #ffffff
+          position relative
+
+        .hidden-content
+          position absolute
+          z-index 5
+          left -3px
+          right -6px
+          top 0
+          background #ffffff
+          box-shadow 0 0 10px rgba(0,0,0,0.3)
+          width 0
+          height 0
+          overflow hidden
+          padding 0
+          opacity 0
+          transition opacity 0.3s
+
+          .inp
+            border 1px solid #a3a3a3
+            color #000000
+            width 100%
+            margin-bottom 21px
+
+          .one-click
+            width 220px
+            margin 0 auto 38px
+
+          label
+            display block
+            text-align center
+            padding-bottom 23px
+
+            input
+              display none
+
+            .psevdocheckbox
+              display inline-block
+              vertical-align top
+              width 8px
+              height 8px
+              border 2px solid $cBlack
+              margin-right 10px
+              margin-left 10px
+              position relative
+              cursor pointer
+
+            span
+              position relative
+              display inline-block
+              vertical-align top
+              font-size 12px
+              line-height 12px
+              font-family $fGothamPro
+              width 140px
+              cursor pointer
+
+            input:checked + .psevdocheckbox:after
+              position absolute
+              content ''
+              top 1px
+              left 1px
+              width 6px
+              height 6px
+              background $cBlack
+
+          .btn.disabled
+            opacity 0.5
+            cursor  default
+
+          p
+            font-size 12px
+            line-height 14px
+
+          .jq-selectbox
+            display block
+            width 100%
+
+          .jq-selectbox__select
+            display block
+            width 100%
+            height auto
+            border none
+            box-shadow none
+            background none
+            padding 0
+            margin 5px 0
+
+            .jq-selectbox__select-text
+              width 100% !important
+              background rgba(0,0,0,0.02)
+              box-shadow none
+              font-size 12px
+              line-height 14px
+              padding 5px 0
+              transition all 0.3s
+              text-shadow none
+
+          .jq-selectbox__select:hover
+            .jq-selectbox__select-text
+              background rgba(0,0,0,0.1)
+
+          .jq-selectbox__trigger
+            border-left none
+
+            .jq-selectbox__trigger-arrow
+              top 10px
+              right 5px
+
+          .jq-selectbox__dropdown
+            right 0 !important
+            width 100% !important
+
+            ul
+              display block
+              border-radius 0
+
+              li
+                min-height 0
+                font-size 12px
+                line-height 14px
+                display block
+                text-align left
+
+              li:hover
+                background #a3abb1
+
+      .hidden-form:hover
+        .hidden-content
+          display block
+          padding 33px 30px
+          overflow visible
+          width auto
+          height auto
+          opacity 1
+
+  .stock-more
+    padding-left 50px
+
+    h4
+      margin 30px
+
+    iframe
+      width 100%
+      height 515px
